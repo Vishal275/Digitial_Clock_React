@@ -1,0 +1,43 @@
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.morning {
+  background: url(./assets/scenary.jpg);
+}
+.app .heading {
+  font-size: 10rem;
+  font-weight: 600;
+  color: #225373;
+}
+.app .time {
+  font-size: 20rem;
+}
+.app .date {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #051320;
+}
+
+.flicker {
+  font-family: 'Merienda', sans-serif;
+  color: #dc5c06ad;
+  background: -webkit-gradient(linear, left top, right top, from(#be1414), to(#1d1c1c), color-stop(0.8, #000000)) no-repeat;
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.9, rgb(0, 0, 0))) no-repeat;
+  background-size: 300px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 2s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
